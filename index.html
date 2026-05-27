@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Proyecto Escuela Comunidad</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .p{
+         padding:20px;
+        text-align:center;;
+    
+    }
+    .p1{
+          padding:20px;
+        text-align:center;;
+        color: #eff300;
+    }
+    body{
+        background:#081f4d;
+        color:white;
+        overflow-x:hidden;
+    }
+
+    /* Fondo estrellado */
+    body::before{
+        content:"";
+        position:fixed;
+        width:100%;
+        height:100%;
+        background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+        background-size: 60px 60px, 90px 90px;
+        background-position: 0 0, 30px 30px;
+        opacity:0.4;
+        z-index:-1;
+    }
+
+    header{
+        text-align:center;
+        padding:50px 20px 30px;
+    }
+
+    header h1{
+        font-size:60px;
+        color:#ffd000;
+        text-transform:uppercase;
+        letter-spacing:3px;
+        margin-bottom:10px;
+    }
+
+    header h2{
+        font-size:28px;
+        font-weight:normal;
+        color:#d9d9d9;
+    }
+
+    .contenedor{
+        width:90%;
+        max-width:1200px;
+        margin:auto;
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:30px;
+        padding-bottom:50px;
+    }
+
+    .card{
+        background:#132b63;
+        border-radius:25px;
+        overflow:hidden;
+        box-shadow:0 10px 25px rgba(0,0,0,0.4);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-8px);
+    }
+
+    .card img{
+        width:100%;
+        height:500px;
+        object-fit:cover;
+        display:block;
+    }
+
+    .texto{
+        padding:20px;
+        text-align:center;
+    }
+
+    .texto h3{
+        font-size:28px;
+        margin-bottom:10px;
+        color:#ffd000;
+    }
+
+    .texto p{
+        font-size:16px;
+        line-height:1.5;
+        color:#f0f0f0;
+    }
+
+    footer{
+        text-align:center;
+        padding:20px;
+        color:#cfcfcf;
+        font-size:14px;
+    }
+
+    @media(max-width:700px){
+        header h1{
+            font-size:38px;
+        }
+
+        header h2{
+            font-size:20px;
+        }
+
+        .card img{
+            height:400px;
+        }
+    }
+    .link{
+        color: darkgoldenrod;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Proyecto Escuela Comunidad</h1>
+    <h2>Iglesia de Tezoyuca</h2>
+</header>
+<div class="p">Infografias de Las iglesia de nuestra comunidad</div>
+<section class="contenedor">
+
+    <div class="card">
+        <img src="1.png" alt="Parroquia San Buena Ventura">
+        <div class="texto">
+            <h3>Parroquia San Buena Ventura</h3>
+            <p>
+                Historia, arte colonial y tradiciones religiosas que forman parte
+                importante del patrimonio cultural de Tezoyuca.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="2.png" alt="Iglesia de la Asención">
+        <div class="texto">
+            <h3>Iglesia de la Asención</h3>
+            <p>
+                Templo colonial reconocido por su arquitectura y celebraciones
+                tradicionales de la comunidad.
+            </p>
+           <a href="mate.html"><div class="link" >MAS INFORMACION detallada.</div> </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="3.png" alt="Iglesia de Santiago">
+        <div class="texto">
+            <h3>Iglesia de Santiago</h3>
+            <p>
+                Destaca por su fachada de tezontle y la tradicional danza
+                de Moros y Cristianos.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="4.png" alt="Iglesia de San Felipe">
+        <div class="texto">
+            <h3>Iglesia de San Felipe</h3>
+            <p>
+                Espacio religioso moderno con gran importancia social y cultural
+                dentro de la colonia.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="5.png" alt="Parroquia de la Resurrección">
+        <div class="texto">
+            <h3>Parroquia de la Resurrección</h3>
+            <p>
+                Comunidad juvenil y arquitectura contemporánea enfocada
+                en la integración social y religiosa.
+            </p>
+        </div>
+    </div>
+
+</section>
+<footer>
+    Proyecto Escolar • Comunidad e Iglesias de Tezoyuca
+</footer>
+        </div>
+    </div>
+</body>
+</html>
